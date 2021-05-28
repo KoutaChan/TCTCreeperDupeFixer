@@ -21,8 +21,6 @@ public class Event implements Listener {
 
     @EventHandler
     public void onBlockPlace(BlockPlaceEvent e) {
-        if(e.getPlayer().getName().equals())
-
         if (e.getHand() == EquipmentSlot.OFF_HAND && e.getItemInHand().getType() == Material.SKULL_ITEM && e.getItemInHand().getDurability() == 4 && e.getPlayer().getGameMode() == GameMode.SURVIVAL) {
             new BukkitRunnable(){
                 @Override

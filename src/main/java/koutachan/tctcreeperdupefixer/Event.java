@@ -29,6 +29,7 @@ public class Event implements Listener {
                         for (ItemStack itemStack : e.getPlayer().getInventory().getContents()) {
                             if (itemStack != null && itemStack.getType() == Material.SKULL_ITEM) {
                                 itemStack.setAmount(itemStack.getAmount() - 1);
+                                break;
 
                             }
                         }
